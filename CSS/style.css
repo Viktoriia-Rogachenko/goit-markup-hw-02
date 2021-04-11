@@ -4,9 +4,12 @@
   --primery-text-color: #757575;
   --titel-text-color: #212121;
   --accent-color: #2196f3;
+  --logo-accent-color: #000000;
+  --contacts-accent-color: rgba(255, 255, 255, 0.6);
 
   --bg-main-color: #ffffff;
   --bg-alt-color: #f5f4fa;
+  --bg-secondary-color: #2f303a;
 
   --main-font: Roboto, sans-serif;
   --logo-font: Raleway, sans-serif;
@@ -36,11 +39,11 @@ ul {
 }
 
 .logo-accent-white {
-  color: #ffffff;
+  color: var(--bg-main-color);
 }
 
 .logo-accent-black {
-  color: #000000;
+  color: var(--logo-accent-color);
 }
 
 /* Site nav */
@@ -64,7 +67,7 @@ ul {
 
 /* Auth nav */
 .auth-nav .link {
-  color: #757575;
+  color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -79,17 +82,17 @@ ul {
 
 /* Hero */
 .hero-titel {
-  color: #ffffff;
-
+  color: var(--bg-main-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--bg-secondary-color);
   font-family: inherit;
 }
 
@@ -121,6 +124,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .feature-list .text {
@@ -150,8 +154,8 @@ ul {
 }
 
 .button {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--bg-main-color);
 }
 
 /* Portfolio */
@@ -165,13 +169,13 @@ ul {
 
 .portfolio-filter .button.current {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--bg-main-color);
 }
 
-.portfolio-filter .link:hover,
-.portfolio-filter .link:focus {
+.portfolio-filter .button:hover,
+.portfolio-filter .button:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--bg-main-color);
 }
 
 .portfolio-filter .button {
@@ -194,11 +198,11 @@ ul {
 
 /* Footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bg-secondary-color);
 }
 
 .address {
-  color: #ffffff;
+  color: var(--bg-main-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -207,7 +211,7 @@ ul {
 
 .email,
 .tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contacts-accent-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
